@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://www.jessicafernandesadvogada.com.br/sitemap.xml
