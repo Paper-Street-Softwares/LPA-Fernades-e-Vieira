@@ -105,18 +105,18 @@ const content = {
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'BENEFÍCIO DO INSS NEGADO',
-      FirstPartTitle: 'Problemas com seu',
+      miniTag: 'ESCRITÓRIO DE ADVOCACIA PREVIDENCIÁRIO',
+      FirstPartTitle: 'Medo de errar com o',
       DestaquePartTitle: (
         <p>
-          <span className="italic relative inline-block">benefício</span>
+          <span className="italic relative inline-block">INSS</span>
         </p>
       ),
-      SecondPartTitle: ' previdenciário?',
+      SecondPartTitle: '?',
       subtitle: (
         <p>
-          Entenda seus direitos e saiba quais medidas legais podem garantir o
-          benefício que a lei assegura.
+          Decisões mal orientadas no INSS podem comprometer sua renda hoje e sua
+          tranquilidade amanhã.
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -291,7 +291,7 @@ const content = {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: 'QUEM É A JÉSSICA FERNANDES ADVOCACIA',
+      miniTag: 'QUEM É O FERNANDES & VIEIRA ADVOCACIA',
       FirstPartTitle: 'Nossa atuação',
       DestaquePartTitle: (
         <p>

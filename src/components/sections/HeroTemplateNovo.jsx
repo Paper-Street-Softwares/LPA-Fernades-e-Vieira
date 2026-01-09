@@ -101,13 +101,12 @@ function HeroTemplateNovo({
                 </span>
                 {content.texts.hero.miniTag}
               </div>
-
               <h2
                 className={`text-start desktop1:text-start text-4xl md:text-5xl lg:text-7xl font-mainFont font-medium leading-[1.1] tracking-tight ${text}`}
               >
                 {content.texts.hero.FirstPartTitle}
-                <div className="flex flex-wrap ">
-                  {' '}
+
+                <span className="inline-flex items-baseline ml-2 tablet1:ml-3">
                   <span
                     className={`${textDestaque} relative italic inline-block`}
                   >
@@ -141,10 +140,11 @@ function HeroTemplateNovo({
                       </svg>
                     )}
                   </span>
+
                   <span className="ml-1">
                     {content.texts.hero.SecondPartTitle}
                   </span>
-                </div>
+                </span>
               </h2>
 
               <p
@@ -152,7 +152,6 @@ function HeroTemplateNovo({
               >
                 {content.texts.hero.subtitle}
               </p>
-
               <div className="flex flex-col gap-4 pt-4">
                 <ButtonReflexo
                   icon={
