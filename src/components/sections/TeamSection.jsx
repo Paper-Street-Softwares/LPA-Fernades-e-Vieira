@@ -31,7 +31,7 @@ function TeamSectionNew({ ButtonModal, colorMode }) {
 
   switch (colorMode) {
     case 'light':
-      backgroundMode = 'bg-secondary/60'
+      backgroundMode = 'bg-white'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryDark'
@@ -65,7 +65,7 @@ function TeamSectionNew({ ButtonModal, colorMode }) {
   }
 
   return (
-    <SectionArea id="about" className={`${backgroundMode}`} paddingtop={false}>
+    <SectionArea id="about" className={`${backgroundMode}`}>
       <SectionWrapper className="desktop1:max-w-[900px]">
         <div className="text-center">
           <span
