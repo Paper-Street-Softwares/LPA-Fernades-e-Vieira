@@ -105,18 +105,18 @@ const content = {
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'ESCRITÓRIO DE ADVOCACIA PREVIDENCIÁRIO',
-      FirstPartTitle: 'Medo de errar com o',
+      miniTag: 'ESCRITÓRIO DE ADVOCACIA PREVIDENCIÁRIA',
+      FirstPartTitle: 'Especialistas em Direito',
       DestaquePartTitle: (
         <p>
-          <span className="italic relative inline-block">INSS</span>
+          <span className="italic relative inline-block">Previdenciário</span>
         </p>
       ),
-      SecondPartTitle: '?',
+      SecondPartTitle: '',
       subtitle: (
         <p>
-          Decisões mal orientadas no INSS podem comprometer sua renda hoje e sua
-          tranquilidade amanhã.
+          Atuação técnica e responsável na defesa dos seus direitos, com
+          experiência e compromisso com cada caso.
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -302,19 +302,23 @@ const content = {
       subtitle: '',
       paragraph: (
         <div>
-          Atuo com ética, técnica e comprometimento para oferecer soluções
-          jurídicas seguras e eficazes.
-          <br />
-          Minha missão é orientar cada cliente com clareza e responsabilidade,
-          sempre buscando os melhores resultados.
-          <br />
-          Acredito que cada caso é único e merece uma atenção personalizada.
-          <br />
-          Por isso, escuto com empatia, respeito as particularidades de cada
-          situação e trabalho com estratégia e discrição.
-          <br />
-          Mais do que representar juridicamente, estou aqui para apoiar, acolher
-          e construir caminhos justos e equilibrados para você e sua família.
+          O Fernandes & Vieira é um escritório especializado em Direito
+          Previdenciário, criado para defender histórias de trabalho, dedicação
+          e luta que não podem ser ignoradas.
+          <br /> <br />
+          Somos as advogadas Ana Carolina Vieira e Jéssica Fernandes e
+          acreditamos que cada direito previdenciário representa mais do que um
+          benefício: representa segurança, dignidade e tranquilidade para o
+          futuro.
+          <br /> <br />
+          Aqui, cada cliente é ouvido com atenção, orientado com clareza e
+          acompanhado de perto. Atuamos com empatia, responsabilidade e
+          transparência, explicando cada etapa do processo de forma simples,
+          porque entendemos que confiança se constrói com presença e verdade.
+          <br /> <br />
+          Mais do que processos, cuidamos de pessoas. Nosso compromisso é
+          transformar informação em proteção e direito em segurança real para
+          quem confia em nosso trabalho.
         </div>
       ),
       buttonModalLabelAbout: 'Continuar lendo',

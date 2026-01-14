@@ -94,7 +94,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode }) {
                     {content.texts.about.subtitle}
                   </p>
                   <p
-                    className={`font-secondFont font-light text-sm tablet1:text-lg leading-relaxed mt-6 ${textOpacity}`}
+                    className={`font-secondFont font-light text-sm tablet1:text-sm leading-relaxed mt-6 ${textOpacity}`}
                   >
                     {content.texts.about.paragraph}
                   </p>
