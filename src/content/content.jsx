@@ -3,6 +3,7 @@ import heroDefaultImg from '../assets/imgs/hero/lawHero.webp'
 import imgFeatures from '../assets/imgs/features/imgServices.webp'
 
 import aboutImg from '../assets/imgs/about/aboutImg.webp'
+import aboutSocialImg from '../assets/imgs/about/aboutSocial.webp'
 
 import imgSteps from '../assets/imgs/steps/imgSteps.webp'
 import team1 from '../assets/imgs/team/team1.webp'
@@ -68,7 +69,7 @@ export const infos = {
     </div>
   ),
   obs: <span className="italic">A Definir</span>,
-  instagramProfile: '', // Sem o @
+  instagramProfile: 'fernandesevieiraadv', // Sem o @
   facebookProfile: '',
   linkeDinProfile: '',
   x: '',
@@ -339,24 +340,24 @@ const content = {
       titleModal: 'A_Definir',
       ctaButtonAriaLabel: 'Botão para entrar em contato',
       ctaButtonText: 'Entre em contato',
-      // aboutSocial: {
-      //   img: {
-      //     img: aboutSocialImg,
-      //     alt: `Foto do Instagram do ${infos.name}`,
-      //     altDefault: 'Imagem ilustrativa da Seção de Redes Sociais',
-      //   },
-      //   miniTag: 'REDES SOCIAIS',
-      //   title: 'Conecte-se conosco',
-      //   subtitle:
-      //     'Aproveite nossas redes sociais para mantermos contato e ficar por dentro dos lançamentos, novidades e atualizações do mercado imobiliário.',
-      //   paragraph: <p></p>,
-      //   labelInstagram: 'Siga-nos no Instagram',
-      //   labelFacebook: 'Siga-nos no Facebook',
-      //   labelLinkedin: 'Siga-nos no LinkedIn',
-      //   labelX: 'Siga-nos no X',
-      //   labelTiktok: 'Siga-nos no Tik Tok',
-      //   labelYoutube: 'Siga-nos no Youtube',
-      // },
+      aboutSocial: {
+        img: {
+          img: aboutSocialImg,
+          alt: `Foto do Instagram do ${infos.name}`,
+          altDefault: 'Imagem ilustrativa da Seção de Redes Sociais',
+        },
+        miniTag: 'REDES SOCIAIS',
+        title: 'Conecte-se conosco',
+        subtitle:
+          'Acompanhe nossas redes sociais para se manter informado sobre conteúdos jurídicos, atualizações e temas relevantes das áreas de atuação.',
+        paragraph: <p></p>,
+        labelInstagram: 'Siga-nos no Instagram',
+        labelFacebook: 'Siga-nos no Facebook',
+        labelLinkedin: 'Siga-nos no LinkedIn',
+        labelX: 'Siga-nos no X',
+        labelTiktok: 'Siga-nos no Tik Tok',
+        labelYoutube: 'Siga-nos no Youtube',
+      },
     },
     team: {
       miniTag: ' ADVOGADAS',

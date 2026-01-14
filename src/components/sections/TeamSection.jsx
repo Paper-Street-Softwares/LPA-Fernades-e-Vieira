@@ -66,7 +66,7 @@ function TeamSectionNew({ ButtonModal, colorMode }) {
 
   return (
     <SectionArea id="about" className={`${backgroundMode}`} paddingtop={false}>
-      <SectionWrapper>
+      <SectionWrapper className="desktop1:max-w-[900px]">
         <div className="text-center">
           <span
             className={`font-bold font-secondFont tracking-wider uppercase mb-4 text-xs block ${miniTagColor}`}
@@ -87,7 +87,7 @@ function TeamSectionNew({ ButtonModal, colorMode }) {
           </p>
         </div>
         <section className="w-full relative overflow-visible">
-          <div className="mx-aut flex flex-col relative z-10 gap-12">
+          <div className="mx-aut flex flex-col relative z-10">
             <div className="flex flex-col-reverse desktop1:flex-row-reverse gap-4 desktop1:gap-16 items-center">
               {/* Conteúdo textual */}
               <motion.div
@@ -117,7 +117,7 @@ function TeamSectionNew({ ButtonModal, colorMode }) {
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
-                className="relative w-full mt-10 tablet1:mt-24 desktop1:mt-10 m-auto overflow-visible mb-10"
+                className="relative w-full desktop1:max-w-[400px] mt-10 tablet1:mt-24 desktop1:mt-10 m-auto overflow-visible mb-10"
               >
                 <div className="relative rounded-3xl shadow-2xl ring-1 ring-black/5">
                   {/* CLIP DA IMAGEM */}
@@ -126,10 +126,10 @@ function TeamSectionNew({ ButtonModal, colorMode }) {
                   >
                     <img
                       src={content.texts.team.imgs.img1}
-                      alt={content.texts.team.imgs.alt}
-                      className="w-full scale-105 hover:scale-100 transition-transform duration-700 rounded-[1rem]"
-                      width={726}
-                      height={726}
+                      alt={content.texts.features.alt}
+                      className="w-full h-full object-cover scale-105 hover:scale-100 rounded-2xl transition-transform duration-700 "
+                      width={798}
+                      height={798}
                     />
                   </div>
                 </div>
@@ -166,7 +166,7 @@ function TeamSectionNew({ ButtonModal, colorMode }) {
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
-                className="relative w-full mt-10 tablet1:mt-24 desktop1:mt-10 m-auto overflow-visible mb-10"
+                className="relative w-full desktop1:max-w-[400px] mt-10 tablet1:mt-24 desktop1:mt-10 m-auto overflow-visible mb-10"
               >
                 <div className="relative rounded-3xl shadow-2xl ring-1 ring-black/5">
                   {/* CLIP DA IMAGEM */}

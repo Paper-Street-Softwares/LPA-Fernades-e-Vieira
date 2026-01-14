@@ -52,7 +52,7 @@ export default function Index() {
             {/* <FeaturesSemImage colorMode={colorMode} /> */}
             <AboutNovoTemplate colorMode={colorMode} ButtonModal={false} />
             <TeamSectionNew colorMode={colorMode} />
-            {/* <SocialMediaTemplate colorMode={colorMode} /> */}
+            <SocialMediaTemplate colorMode={colorMode} />
             <CtaNovoTemplate colorMode={colorMode} />
             <StepsNovoTemplate colorMode={colorMode} />
             <FaqNovoTemplate colorMode={colorMode} />
