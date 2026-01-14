@@ -84,12 +84,12 @@ function FeaturesNovaTemplate({ colorMode }) {
                   className="relative order-2 lg:order-1 w-full m-auto"
                 >
                   <div
-                    className={`relative overflow-hidden rounded-3xl shadow-2xl  ${image}`}
+                    className={`relative overflow-hidden rounded-3xl shadow-2xl aspect-[4/5] ${image}`}
                   >
                     <img
                       src={content.texts.features.imgFeatures}
                       alt={content.texts.features.alt}
-                      className="w-full h-full object-cover scale-105 hover:scale-100 rounded-2xl transition-transform duration-700"
+                      className="w-full h-full object-cover scale-105 hover:scale-100 rounded-2xl transition-transform duration-700 "
                       width={798}
                       height={798}
                     />
@@ -141,7 +141,7 @@ function FeaturesNovaTemplate({ colorMode }) {
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
-                className="order-1 lg:order-2 space-y-8 w-full desktop1:w-[50%]"
+                className="order-1 lg:order-2 space-y-8 w-full desktop1:w-full"
               >
                 <div>
                   <span

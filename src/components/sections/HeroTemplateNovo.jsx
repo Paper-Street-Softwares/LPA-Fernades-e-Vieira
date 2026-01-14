@@ -101,12 +101,12 @@ function HeroTemplateNovo({
                 </span>
                 {content.texts.hero.miniTag}
               </div>
-              <h2
-                className={`text-start desktop1:text-start text-4xl md:text-5xl lg:text-7xl font-mainFont font-medium leading-[1.1] tracking-tight ${text}`}
+              <h1
+                className={`text-start desktop1:text-start text-3xl md:text-5xl lg:text-5xl font-mainFont font-medium leading-[1.1] tracking-tight ${text}`}
               >
                 {content.texts.hero.FirstPartTitle}
 
-                <span className="inline-flex items-baseline ml-2 tablet1:ml-3">
+                <span className="inline-flex items-baseline tablet1:ml-2 desktop1:ml-2 desktop2:ml-0">
                   <span
                     className={`${textDestaque} relative italic inline-block`}
                   >
@@ -145,7 +145,7 @@ function HeroTemplateNovo({
                     {content.texts.hero.SecondPartTitle}
                   </span>
                 </span>
-              </h2>
+              </h1>
 
               <p
                 className={`text-start desktop1:text-start text-lg md:text-xl leading-relaxed max-w-lg font-secondFont font-extralight ${textOpacity}`}
