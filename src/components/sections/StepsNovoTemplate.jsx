@@ -126,7 +126,7 @@ function StepsNovoTemplate({ colorMode }) {
                         />
                       )}
                       <div
-                        className ={`w-14 h-14 rounded-full ${stepNumberBg} border-2 border-primary ${stepNumberText} flex items-center justify-center text-xl font-bold font-mainFont shrink-0 shadow-sm z-10`}
+                        className={`w-14 h-14 rounded-full ${stepNumberBg} border-2 border-primary ${stepNumberText} flex items-center justify-center text-xl font-bold font-mainFont shrink-0 shadow-sm z-10`}
                       >
                         {item.stepNumber}
                       </div>

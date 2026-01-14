@@ -5,6 +5,8 @@ import imgFeatures from '../assets/imgs/features/imgServices.webp'
 import aboutImg from '../assets/imgs/about/aboutImg.webp'
 
 import imgSteps from '../assets/imgs/steps/imgSteps.webp'
+import team1 from '../assets/imgs/team/team1.webp'
+import team2 from '../assets/imgs/team/team2.webp'
 
 import {
   Baby,
@@ -355,6 +357,17 @@ const content = {
       //   labelTiktok: 'Siga-nos no Tik Tok',
       //   labelYoutube: 'Siga-nos no Youtube',
       // },
+    },
+    team: {
+      miniTag: ' ADVOGADAS',
+      title: <h1>Cuidado além do processo</h1>,
+      subtitle:
+        ' Por trás de cada aposentadoria, auxílio ou pensão, existe uma história de trabalho, esforço e expectativas.',
+      imgs: {
+        img1: team1,
+        img2: team2,
+        alt: 'Imagens ilustrativa dos profissionais',
+      },
     },
     ctaSecondary: {
       miniTag: 'FALE CONOSCO',
