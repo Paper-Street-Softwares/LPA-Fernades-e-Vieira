@@ -1,22 +1,22 @@
-import React, { useState } from 'react'
-import { motion } from 'framer-motion'
-import SectionArea from '../sectionElements/SectionArea'
-import SectionWrapper from '../sectionElements/SectionWrapper'
-import { ArrowRight, CheckCircle2, X } from 'lucide-react'
-import { Dialog } from 'primereact/dialog'
-import content from '../../content/content'
-import ButtonReflexo from '../interactives/ButtonReflexo'
-import { Button } from '../interactives/ButtonNovoTemplate'
-import { Phone } from 'lucide-react'
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import SectionArea from "../sectionElements/SectionArea";
+import SectionWrapper from "../sectionElements/SectionWrapper";
+import { ArrowRight, CheckCircle2, X } from "lucide-react";
+import { Dialog } from "primereact/dialog";
+import content from "../../content/content";
+import ButtonReflexo from "../interactives/ButtonReflexo";
+import { Button } from "../interactives/ButtonNovoTemplate";
+import { Phone } from "lucide-react";
 
 function TeamSectionNew({ ButtonModal, colorMode }) {
-  const [visible, setVisible] = useState(false)
-  const [modalTitle, setModalTitle] = useState('')
+  const [visible, setVisible] = useState(false);
+  const [modalTitle, setModalTitle] = useState("");
 
   const onClick = () => {
-    setModalTitle(content.texts.about.title)
-    setVisible(true)
-  }
+    setModalTitle(content.texts.about.title);
+    setVisible(true);
+  };
 
   // Definindo classes conforme colorMode
   let backgroundMode,
@@ -27,41 +27,41 @@ function TeamSectionNew({ ButtonModal, colorMode }) {
     buttonBg,
     textDestaque,
     image,
-    miniTagColor
+    miniTagColor;
 
   switch (colorMode) {
-    case 'light':
-      backgroundMode = 'bg-white'
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      textDestaque = 'text-primaryDark'
-      cardBg = 'bg-white/10'
-      iconBg = 'bg-primaryDark/10 text-primaryDark'
-      buttonBg = 'bg-primaryDark'
-      miniTagColor = 'text-primaryDark'
-      image = ' border-[8px] border-white'
-      break
-    case 'dark':
-      backgroundMode = 'bg-black'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      textDestaque = 'text-primaryLight'
-      cardBg = 'bg-gray-800/20'
-      iconBg = 'bg-primaryLight/20 text-primaryLight'
-      buttonBg = 'bg-primaryLight'
-      miniTagColor = 'text-primaryDark'
-      image = ' border-[8px] border-borderImage'
-      break
+    case "light":
+      backgroundMode = "bg-white";
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      textDestaque = "text-primaryDark";
+      cardBg = "bg-white/10";
+      iconBg = "bg-primaryDark/10 text-primaryDark";
+      buttonBg = "bg-primaryDark";
+      miniTagColor = "text-primaryDark";
+      image = " border-[8px] border-white";
+      break;
+    case "dark":
+      backgroundMode = "bg-black";
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      textDestaque = "text-primaryLight";
+      cardBg = "bg-gray-800/20";
+      iconBg = "bg-primaryLight/20 text-primaryLight";
+      buttonBg = "bg-primaryLight";
+      miniTagColor = "text-primaryDark";
+      image = " border-[8px] border-borderImage";
+      break;
     default:
-      backgroundMode = 'bg-white'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      textDestaque = 'text-primaryDark'
-      cardBg = 'bg-white/10'
-      iconBg = 'bg-primaryDark/10 text-primaryDark'
-      buttonBg = 'bg-primaryDark'
-      miniTagColor = 'text-primaryDark'
-      image = ' border-[8px] border-white'
+      backgroundMode = "bg-white";
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      textDestaque = "text-primaryDark";
+      cardBg = "bg-white/10";
+      iconBg = "bg-primaryDark/10 text-primaryDark";
+      buttonBg = "bg-primaryDark";
+      miniTagColor = "text-primaryDark";
+      image = " border-[8px] border-white";
   }
 
   return (
@@ -73,16 +73,14 @@ function TeamSectionNew({ ButtonModal, colorMode }) {
           >
             {content.texts.team.miniTag}
           </span>
-          <h1
-            className={`text-4xl md:text-[48px] leading-[32px] font-mainFont font-light mb-6 ${text}`}
-          >
-            {' '}
+          <h1 className={`text-4xl font-mainFont font-light mb-6 ${text}`}>
+            {" "}
             {content.texts.team.title}
           </h1>
           <p
-            className={`text-lg font-secondFont font-light md:text-xl max-w-2xl mx-auto  ${textOpacity}`}
+            className={`text-[16px] font-secondFont font-light max-w-2xl mx-auto  ${textOpacity}`}
           >
-            {' '}
+            {" "}
             {content.texts.team.subtitle}
           </p>
         </div>
@@ -93,7 +91,7 @@ function TeamSectionNew({ ButtonModal, colorMode }) {
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, ease: 'easeOut' }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
                 className="space-y-8"
               >
                 <div className="max-w-[450px]">
@@ -103,7 +101,7 @@ function TeamSectionNew({ ButtonModal, colorMode }) {
                     Dra. Jéssica Fernandes
                   </h1>
                   <p
-                    className={`font-secondFont font-light text-sm tablet1:text-lg leading-relaxed ${textOpacity}`}
+                    className={`font-secondFont font-light text-sm leading-relaxed ${textOpacity}`}
                   >
                     Sou Jéssica Fernandes, advogada previdenciarista, e escolhi
                     essa área porque acredito que por trás de cada benefício
@@ -122,7 +120,7 @@ function TeamSectionNew({ ButtonModal, colorMode }) {
               <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
                 className="relative w-full desktop1:max-w-[400px] mt-10 tablet1:mt-24 desktop1:mt-10 m-auto overflow-visible mb-10"
               >
                 <div className="relative rounded-3xl shadow-2xl ring-1 max-w-[386px] mx-auto ring-black/5">
@@ -146,7 +144,7 @@ function TeamSectionNew({ ButtonModal, colorMode }) {
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, ease: 'easeOut' }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
                 className="space-y-8"
               >
                 <div className="max-w-[450px]">
@@ -156,7 +154,7 @@ function TeamSectionNew({ ButtonModal, colorMode }) {
                     Dra. Carolina Vieira
                   </h1>
                   <p
-                    className={`font-secondFont font-light text-sm tablet1:text-lg leading-relaxed ${textOpacity}`}
+                    className={`font-secondFont font-light text-sm leading-relaxed ${textOpacity}`}
                   >
                     Sou Carolina Vieira, advogada previdenciarista, e minha
                     atuação é guiada por um olhar humano sobre o Direito.
@@ -176,7 +174,7 @@ function TeamSectionNew({ ButtonModal, colorMode }) {
               <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
                 className="relative w-full desktop1:max-w-[400px] mt-10 tablet1:mt-24 desktop1:mt-10 m-auto overflow-visible mb-10"
               >
                 <div className="relative rounded-3xl shadow-2xl ring-1 max-w-[386px] mx-auto ring-black/5">
@@ -208,17 +206,17 @@ function TeamSectionNew({ ButtonModal, colorMode }) {
             }
             visible={visible}
             onHide={() => setVisible(false)}
-            style={{ width: '50vw' }}
+            style={{ width: "50vw" }}
             breakpoints={{
-              '4000px': '641px',
-              '1024px': '641px',
-              '641px': '85vw',
+              "4000px": "641px",
+              "1024px": "641px",
+              "641px": "85vw",
             }}
           ></Dialog>
         </section>
       </SectionWrapper>
     </SectionArea>
-  )
+  );
 }
 
-export default TeamSectionNew
+export default TeamSectionNew;

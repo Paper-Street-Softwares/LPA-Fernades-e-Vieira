@@ -1,13 +1,13 @@
-import logo from '../assets/imgs/logo/logo.webp'
-import heroDefaultImg from '../assets/imgs/hero/lawHero.webp'
-import imgFeatures from '../assets/imgs/features/imgServices.webp'
+import logo from "../assets/imgs/logo/logo.webp";
+import heroDefaultImg from "../assets/imgs/hero/lawHero.webp";
+import imgFeatures from "../assets/imgs/features/imgServices.webp";
 
-import aboutImg from '../assets/imgs/about/aboutImg.webp'
-import aboutSocialImg from '../assets/imgs/about/aboutSocial.webp'
+import aboutImg from "../assets/imgs/about/aboutImg.webp";
+import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
 
-import imgSteps from '../assets/imgs/steps/imgSteps.webp'
-import team1 from '../assets/imgs/team/team1.webp'
-import team2 from '../assets/imgs/team/team2.webp'
+import imgSteps from "../assets/imgs/steps/imgSteps.webp";
+import team1 from "../assets/imgs/team/team1.webp";
+import team2 from "../assets/imgs/team/team2.webp";
 
 import {
   Baby,
@@ -19,31 +19,31 @@ import {
   LucideIdCard,
   Scale,
   UserX,
-} from 'lucide-react'
-import { Users } from 'lucide-react'
-import { FileText } from 'lucide-react'
+} from "lucide-react";
+import { Users } from "lucide-react";
+import { FileText } from "lucide-react";
 
-const currentYear = new Date().getFullYear()
+const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: 'Fernandes & Vieira Advocacia',
-  email: 'contato', // Email desejado pelo cliente
-  emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'jessicafernandesadvogada.com.br', // Sem "www"
+  name: "Fernandes & Vieira Advocacia",
+  email: "contato", // Email desejado pelo cliente
+  emailSecundario: "A_Definir", // Email desejado pelo cliente
+  domain: "jessicafernandesadvogada.com.br", // Sem "www"
   phone: {
-    ddd: '31',
-    firstPart: '99548', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '5761', // Apenas os 4 últimos números
+    ddd: "31",
+    firstPart: "99548", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "5761", // Apenas os 4 últimos números
   },
   phoneSecundario: {
-    ddd: 'A_Definir',
-    firstPart: 'A_Definir', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: 'A_Definir', // Apenas os 4 últimos números
+    ddd: "A_Definir",
+    firstPart: "A_Definir", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "A_Definir", // Apenas os 4 últimos números
   },
   phoneTerciario: {
-    ddd: 'A_Definir',
-    firstPart: 'A_Definir', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: 'A_Definir', // Apenas os 4 últimos números
+    ddd: "A_Definir",
+    firstPart: "A_Definir", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "A_Definir", // Apenas os 4 últimos números
   },
   endereco: (
     <div>
@@ -69,18 +69,18 @@ export const infos = {
     </div>
   ),
   obs: <span className="italic">A Definir</span>,
-  instagramProfile: 'fernandesevieiraadv', // Sem o @
-  facebookProfile: '',
-  linkeDinProfile: '',
-  x: '',
-  tiktokProfile: '',
+  instagramProfile: "fernandesevieiraadv", // Sem o @
+  facebookProfile: "",
+  linkeDinProfile: "",
+  x: "",
+  tiktokProfile: "",
 
   whatsappDefaultMessage:
-    'Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.',
+    "Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
   whatsChatDefaultMessage:
-    'Gostaria de falar conosco agora mesmo? Clque abaixo 👇',
-  slogan: '',
-}
+    "Gostaria de falar conosco agora mesmo? Clque abaixo 👇",
+  slogan: "",
+};
 
 const content = {
   texts: {
@@ -94,24 +94,24 @@ const content = {
         alt: `Logomarca ${infos.name}`,
       },
       menuItems: [
-        'Início',
-        'Serviços',
-        'Sobre',
-        'Perguntas',
+        "Início",
+        "Serviços",
+        "Sobre",
+        "Perguntas",
         // 'Blog',
         // 'Perguntas',
         // 'Mapa',
       ],
-      menuId: ['home', 'feature', 'about', 'faq'],
-      ariaLabel: 'Botão de Contato',
-      ctaButtonText: 'Contato',
-      ctaButtonTextResponsive: 'Contato',
+      menuId: ["home", "feature", "about", "faq"],
+      ariaLabel: "Botão de Contato",
+      ctaButtonText: "Contato",
+      ctaButtonTextResponsive: "Contato",
     },
     hero: {
-      miniTag: 'ESCRITÓRIO DE ADVOCACIA EM MINAS GERAIS',
+      miniTag: "ESCRITÓRIO DE ADVOCACIA",
       title: (
         <h1>
-          Especialistas <br className="hidden desktop1:flex" /> em Direito {''}
+          Especialistas <br className="hidden desktop1:flex" /> em Direito {""}
           <span className="destaque relative italic font-light">
             Previdenciário
             <span>
@@ -133,44 +133,44 @@ const content = {
       ),
       subtitle: (
         <p>
-          Atuação técnica e responsável na defesa dos seus direitos, com
-          experiência e compromisso com cada caso.
+          Atuação técnica e responsável na defesa dos seus benefícios, auxílios
+          e aposentadorias, com total compromisso com cada caso.
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
-      alt: 'Imagem ilustrativa da Seção Início',
+      alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
-        'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'Falar com nossa equipe',
-      ctaButtonTextSecondary: 'A_Definir',
+        "Botão para chamada de ação para contato pelo whatsapp",
+      ctaButtonText: "Falar com um especialista no WhatsApp",
+      ctaButtonTextSecondary: "A_Definir",
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'Nem toda decisão do INSS está correta — e muitos segurados recebem menos do que deveriam.',
-        textTwo: '',
+        text: "Atendimento online em todo território nacional.",
+        textTwo: "",
       },
-      secondaryCta: 'Contato',
+      secondaryCta: "Contato",
       images: {
         static: {
           img: {},
-          alt: '',
+          alt: "",
         },
         slide1: {
           img: {},
-          alt: '',
+          alt: "",
         },
         slide2: {
           img: {},
-          alt: '',
+          alt: "",
         },
         slide3: {
           img: {},
-          alt: '',
+          alt: "",
         },
       },
     },
     features: {
-      miniTag: 'Áreas de Atuação',
+      miniTag: "Áreas de Atuação",
       title: (
         <h1>
           Atuação completa em Direito da
@@ -178,16 +178,16 @@ const content = {
         </h1>
       ),
       subtitle:
-        'Cuidamos de cada etapa do seu benefício, da análise inicial até as medidas legais necessárias.',
+        "Cuidamos de cada etapa do seu benefício, da análise inicial até as medidas legais necessárias para te auxiliar em todo o contato com o INSS.",
       imgFeatures: imgFeatures,
-      alt: 'imagem representativa da Seção Serviços',
-      titleMessageFeature: '100%',
-      subtitleMessageFeature: 'pelo direito do segurado',
+      alt: "imagem representativa da Seção Serviços",
+      titleMessageFeature: "100%",
+      subtitleMessageFeature: "pelo direito do segurado",
       cards: {
         card1: {
-          title: 'Salário-Maternidade',
+          title: "Salário-Maternidade",
           subtitle:
-            'Orientação e atuação para garantir o benefício mesmo em casos de negativa do INSS.',
+            "Orientação e atuação para garantir o benefício mesmo em casos de negativa do INSS.",
           description: (
             <div>
               A_Definir
@@ -197,13 +197,13 @@ const content = {
             </div>
           ),
           icon: <Baby />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
         card2: {
-          title: 'Aposentadorias',
+          title: "Aposentadorias",
           subtitle:
-            'Análise completa para conquistar a melhor aposentadoria no menor tempo possível.',
+            "Análise completa para conquistar a melhor aposentadoria no menor tempo possível.",
           description: (
             <div>
               A_Definir
@@ -213,13 +213,13 @@ const content = {
             </div>
           ),
           icon: <FileText />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
         card3: {
-          title: 'Auxílio-Doença e Incapacidade',
+          title: "Auxílio-Doença e Incapacidade",
           subtitle:
-            'Defesa do seu direito ao benefício quando a saúde impede o trabalho.',
+            "Defesa do seu direito ao benefício quando a saúde impede o trabalho.",
           description: (
             <div>
               A_Definir <br />
@@ -228,13 +228,13 @@ const content = {
             </div>
           ),
           icon: <BriefcaseMedical />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
         card4: {
-          title: 'Pensão por Morte',
+          title: "Pensão por Morte",
           subtitle:
-            'Atuação para garantir segurança financeira aos dependentes do segurado.',
+            "Atuação para garantir segurança financeira aos dependentes do segurado.",
           description: (
             <div>
               A_Definir
@@ -244,13 +244,13 @@ const content = {
             </div>
           ),
           icon: <UserX />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
         card5: {
           title: <p>BPC / LOAS</p>,
           subtitle:
-            'Auxílio para idosos e pessoas com deficiência que não possuem renda suficiente.',
+            "Auxílio para idosos e pessoas com deficiência que não possuem renda suficiente.",
           description: (
             <div>
               A_Definir
@@ -260,13 +260,13 @@ const content = {
             </div>
           ),
           icon: <Gavel />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
         card6: {
-          title: 'Revisões de Benefícios',
+          title: "Revisões de Benefícios",
           subtitle:
-            'Verificação de erros no valor pago e busca por correção e atrasados.',
+            "Verificação de erros no valor pago e busca por correção e atrasados.",
           description: (
             <div>
               A_Definir
@@ -276,48 +276,48 @@ const content = {
             </div>
           ),
           icon: <Scale />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
       },
       moreFeatures: {
         card1: {
-          ico: 'A_Definir',
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          ico: "A_Definir",
+          title: "A_Definir",
+          subtitle: "A_Definir",
         },
         card2: {
-          ico: 'A_Definir',
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          ico: "A_Definir",
+          title: "A_Definir",
+          subtitle: "A_Definir",
         },
         card3: {
-          ico: 'A_Definir',
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          ico: "A_Definir",
+          title: "A_Definir",
+          subtitle: "A_Definir",
         },
       },
     },
     maps: {
-      minitag: 'A_Definir',
-      title: 'A_Definir',
-      subtitle: 'A_Definir',
-      embedsrc: 'A_Definir',
+      minitag: "A_Definir",
+      title: "A_Definir",
+      subtitle: "A_Definir",
+      embedsrc: "A_Definir",
     },
     about: {
       imagem: {
         img: aboutImg,
-        alt: 'Imagem ilustrativa da Seção Sobre',
+        alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: 'QUEM É O FERNANDES & VIEIRA ADVOCACIA',
-      FirstPartTitle: 'Nossa atuação',
+      miniTag: "QUEM É O FERNANDES & VIEIRA ADVOCACIA",
+      FirstPartTitle: "Nossa atuação",
       DestaquePartTitle: (
         <p>
-          <span className="italic"> previdenciária</span>{' '}
+          <span className="italic"> previdenciária</span>{" "}
         </p>
       ),
-      SecondPartTitle: '',
-      subtitle: '',
+      SecondPartTitle: "",
+      subtitle: "",
       paragraph: (
         <div>
           O Fernandes & Vieira é um escritório especializado em Direito
@@ -338,7 +338,7 @@ const content = {
           quem confia em nosso trabalho.
         </div>
       ),
-      buttonModalLabelAbout: 'Continuar lendo',
+      buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="text-mutedForeground font-secondFont">
           A_Definir
@@ -350,45 +350,50 @@ const content = {
           A_Definir
         </p>
       ),
-      paragraphModalCta: 'Entre em contato',
-      titleModal: 'A_Definir',
-      ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'Entre em contato',
+      paragraphModalCta: "Entre em contato",
+      titleModal: "A_Definir",
+      ctaButtonAriaLabel: "Botão para entrar em contato",
+      ctaButtonText: "Falar com um especialista no WhatsApp",
       aboutSocial: {
         img: {
           img: aboutSocialImg,
           alt: `Foto do Instagram do ${infos.name}`,
-          altDefault: 'Imagem ilustrativa da Seção de Redes Sociais',
+          altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
         },
-        miniTag: 'REDES SOCIAIS',
-        title: 'Conecte-se conosco',
+        miniTag: "REDES SOCIAIS",
+        title: "Conecte-se conosco",
         subtitle:
-          'Acompanhe nossas redes sociais para se manter informado sobre conteúdos jurídicos, atualizações e temas relevantes das áreas de atuação.',
+          "Acompanhe nossas redes sociais para se manter informado sobre conteúdos jurídicos, atualizações e temas relevantes das áreas de atuação.",
         paragraph: <p></p>,
-        labelInstagram: 'Siga-nos no Instagram',
-        labelFacebook: 'Siga-nos no Facebook',
-        labelLinkedin: 'Siga-nos no LinkedIn',
-        labelX: 'Siga-nos no X',
-        labelTiktok: 'Siga-nos no Tik Tok',
-        labelYoutube: 'Siga-nos no Youtube',
+        labelInstagram: "Siga-nos no Instagram",
+        labelFacebook: "Siga-nos no Facebook",
+        labelLinkedin: "Siga-nos no LinkedIn",
+        labelX: "Siga-nos no X",
+        labelTiktok: "Siga-nos no Tik Tok",
+        labelYoutube: "Siga-nos no Youtube",
       },
     },
     team: {
-      miniTag: ' ADVOGADAS',
-      title: <h1>Cuidado além do processo</h1>,
+      miniTag: " ADVOGADAS",
+      title: (
+        <h1>
+          Cuidado <span className="italic text-primaryDark">além</span> do
+          processo
+        </h1>
+      ),
       subtitle:
-        ' Por trás de cada aposentadoria, auxílio ou pensão, existe uma história de trabalho, esforço e expectativas.',
+        " Por trás de cada aposentadoria, auxílio ou pensão, existe uma história de trabalho, esforço e expectativas.",
       imgs: {
         img1: team1,
         img2: team2,
-        alt: 'Imagens ilustrativa dos profissionais',
+        alt: "Imagens ilustrativa dos profissionais",
       },
     },
     ctaSecondary: {
-      miniTag: 'FALE CONOSCO',
+      miniTag: "FALE CONOSCO",
       title: <h1>Seu direito previdenciário merece atenção.</h1>,
       subtitle:
-        'Negativas do INSS podem gerar dúvidas e insegurança. Busque orientação jurídica para compreender sua situação previdenciária e as medidas previstas em lei.',
+        "Negativas do INSS podem gerar dúvidas e insegurança. Busque orientação jurídica para compreender sua situação previdenciária e as medidas previstas em lei.",
       subtitleDireita: (
         <p className="gap-3 flex font-mainFont opacity-60 mt-1">
           <span>E N T R E </span> E M <span>C O N T A T O</span> V I A
@@ -397,12 +402,12 @@ const content = {
       titleDireita: (
         <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       ),
-      ctaButtonText: 'Entrar em contato',
+      ctaButtonText: "Falar com um especialista no WhatsApp",
       ctaButtonAriaLabel:
-        'Botão para chamada de ação para contato pelo whatsapp',
+        "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
-      miniTag: 'PASSO A PASSO',
+      miniTag: "PASSO A PASSO",
       title: (
         <h1>
           Como
@@ -410,33 +415,33 @@ const content = {
           atendimento?
         </h1>
       ),
-      subtitle: '',
+      subtitle: "",
       img: imgSteps,
-      alt: 'Imagem ilustrativa da Seção Passo a Passo',
+      alt: "Imagem ilustrativa da Seção Passo a Passo",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'Análise inicial do caso',
+          cardTitle: "Análise inicial do caso",
           cardDescription:
-            'Avaliação da situação previdenciária do segurado, do benefício pretendido e do histórico apresentado, com identificação das possibilidades e riscos envolvidos.',
+            "Avaliação da situação previdenciária do segurado, do benefício pretendido e do histórico apresentado, com identificação das possibilidades e riscos envolvidos.",
         },
         card2: {
           stepNumber: 2,
-          cardTitle: 'Análise de documentos e contribuições',
+          cardTitle: "Análise de documentos e contribuições",
           cardDescription:
-            'Exame técnico do CNIS, laudos médicos, vínculos trabalhistas, períodos de contribuição, carência e demais documentos necessários à correta apuração do direito previdenciário.',
+            "Exame técnico do CNIS, laudos médicos, vínculos trabalhistas, períodos de contribuição, carência e demais documentos necessários à correta apuração do direito previdenciário.",
         },
         card3: {
           stepNumber: 3,
-          cardTitle: 'Definição da estratégia previdenciária',
+          cardTitle: "Definição da estratégia previdenciária",
           cardDescription:
-            'Estudo das alternativas legais aplicáveis ao caso, com definição da melhor estratégia, seja na esfera administrativa ou judicial.',
+            "Estudo das alternativas legais aplicáveis ao caso, com definição da melhor estratégia, seja na esfera administrativa ou judicial.",
         },
         card4: {
           stepNumber: 4,
-          cardTitle: 'Atuação administrativa ou judicial',
+          cardTitle: "Atuação administrativa ou judicial",
           cardDescription:
-            'Atuação junto ao INSS ou perante o Poder Judiciário, conforme a estratégia adotada, buscando a efetivação do direito previdenciário do segurado.',
+            "Atuação junto ao INSS ou perante o Poder Judiciário, conforme a estratégia adotada, buscando a efetivação do direito previdenciário do segurado.",
         },
       },
     },
@@ -450,34 +455,34 @@ const content = {
     //   blogLink: 'mauromoncao.wordpress.com', //sem "https://"
     // },
     faq: {
-      miniTag: 'TIRE SUAS DÚVIDAS',
-      title: 'Perguntas Frequentes',
-      subtitle: 'Confira as perguntas abaixo para esclarecer suas dúvidas. ',
+      miniTag: "TIRE SUAS DÚVIDAS",
+      title: "Perguntas Frequentes",
+      subtitle: "Confira as perguntas abaixo para esclarecer suas dúvidas. ",
       questions: {
         question1: {
-          question: 'O que envolve uma análise de benefício do INSS?',
+          question: "O que envolve uma análise de benefício do INSS?",
           answer:
-            'Envolve a verificação do cumprimento dos requisitos legais para o benefício pretendido, como tempo de contribuição, carência, qualidade de segurado e a regularidade da documentação apresentada, conforme a legislação previdenciária vigente.',
+            "Envolve a verificação do cumprimento dos requisitos legais para o benefício pretendido, como tempo de contribuição, carência, qualidade de segurado e a regularidade da documentação apresentada, conforme a legislação previdenciária vigente.",
         },
         question2: {
-          question: 'É possível contestar uma decisão do INSS?',
+          question: "É possível contestar uma decisão do INSS?",
           answer:
-            'Em muitos casos, sim. A decisão pode ser revista por meio de recurso administrativo ou ação judicial, após análise técnica do caso concreto e dos documentos disponíveis, observando-se os procedimentos legais aplicáveis.',
+            "Em muitos casos, sim. A decisão pode ser revista por meio de recurso administrativo ou ação judicial, após análise técnica do caso concreto e dos documentos disponíveis, observando-se os procedimentos legais aplicáveis.",
         },
         question3: {
           question:
-            'Quais são os problemas mais comuns em processos previdenciários?',
+            "Quais são os problemas mais comuns em processos previdenciários?",
           answer:
-            'São comuns situações como documentação incompleta, inconsistências no CNIS, dúvidas quanto ao tempo de contribuição, carência exigida, qualidade de segurado ou avaliação médica previdenciária.',
+            "São comuns situações como documentação incompleta, inconsistências no CNIS, dúvidas quanto ao tempo de contribuição, carência exigida, qualidade de segurado ou avaliação médica previdenciária.",
         },
         question4: {
           question:
-            'Existem prazos para apresentar pedidos ou questionamentos ao INSS?',
+            "Existem prazos para apresentar pedidos ou questionamentos ao INSS?",
           answer:
-            'Sim. Os prazos variam conforme o tipo de procedimento adotado. Recursos administrativos, por exemplo, possuem prazos específicos contados a partir da ciência da decisão, enquanto medidas judiciais dependem da natureza do benefício e do caso analisado.',
+            "Sim. Os prazos variam conforme o tipo de procedimento adotado. Recursos administrativos, por exemplo, possuem prazos específicos contados a partir da ciência da decisão, enquanto medidas judiciais dependem da natureza do benefício e do caso analisado.",
         },
       },
-      paragraph: 'Clique aqui caso tenha mais dúvidas',
+      paragraph: "Clique aqui caso tenha mais dúvidas",
     },
     // team: {
     //   miniTag: 'A_Definir',
@@ -747,13 +752,13 @@ const content = {
     // },
     footer: {
       copyrightLine: ` ${currentYear} - ${infos.name} - Todos os direitos reservados`,
-      footerDivulgacaoText: 'Gostaria de ter um site como este? Clique aqui',
-      midSectionName: 'Até mais',
+      footerDivulgacaoText: "Gostaria de ter um site como este? Clique aqui",
+      midSectionName: "Até mais",
       footerText:
-        'Agradecemos sua visita! Esperamos que em breve você se torne nosso cliente e desfrute de todos os benefícios que oferecemos.',
-      footerSocialText: 'Siga a gente nas redes sociais:',
-      footerNavegacaoText: 'NAVEGAÇÃO',
-      desenvolvidoPor: 'Desenvolvido com excelência por Paper Street',
+        "Agradecemos sua visita! Esperamos que em breve você se torne nosso cliente e desfrute de todos os benefícios que oferecemos.",
+      footerSocialText: "Siga a gente nas redes sociais:",
+      footerNavegacaoText: "NAVEGAÇÃO",
+      desenvolvidoPor: "Desenvolvido com excelência por Paper Street",
       privacidade: (
         <div class="phone3:max-w-3xl mx-auto tablet1:px-6 text-gray-900 leading-relaxed font-secondFont">
           <h1 class="text-3xl font-bold mb-6">Política de Privacidade</h1>
@@ -779,7 +784,7 @@ const content = {
 
           <ul class="list-disc ml-6 mb-6 space-y-2">
             <li>
-              <strong>Autoridade Nacional de Proteção de Dados (ANPD):</strong>{' '}
+              <strong>Autoridade Nacional de Proteção de Dados (ANPD):</strong>{" "}
               órgão responsável pela fiscalização e aplicação da LGPD.
             </li>
 
@@ -986,9 +991,9 @@ const content = {
         </div>
       ),
       pontos: {
-        ponto1: 'Profissionalismo',
-        ponto2: 'Experiência',
-        ponto3: 'Resultados',
+        ponto1: "Profissionalismo",
+        ponto2: "Experiência",
+        ponto3: "Resultados",
       },
     },
     // socios: {
@@ -1060,15 +1065,15 @@ const content = {
       year: currentYear,
       footerexpediente: infos.expediente,
       obsFooter: infos.obs,
-      footerNavegacaoText: 'NAVEGAÇÃO',
-      footerDivulgacaoText: 'Gostaria de ter um site como este? Clique aqui',
+      footerNavegacaoText: "NAVEGAÇÃO",
+      footerDivulgacaoText: "Gostaria de ter um site como este? Clique aqui",
     },
   },
-}
+};
 
 export const abstractions = {
   titleModal: <strong>{content.texts.about.title}</strong>,
   subtitleModal: <strong>{content.texts.about.subtitle}</strong>,
-}
+};
 
-export default content
+export default content;
