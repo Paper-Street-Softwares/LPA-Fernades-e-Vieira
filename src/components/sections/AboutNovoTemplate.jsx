@@ -114,7 +114,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode }) {
                 <div className="space-y-4">
                   {[
                     {
-                      title: 'Atuação Previdenciária Estratégica ',
+                      title: 'Atuação Estratégica',
                       desc: 'Análise técnica de negativas do INSS e das alternativas previstas na legislação previdenciária.',
                     },
                     {

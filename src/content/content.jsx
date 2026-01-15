@@ -325,9 +325,8 @@ const content = {
           e luta que não podem ser ignoradas.
           <br /> <br />
           Somos as advogadas Ana Carolina Vieira e Jéssica Fernandes e
-          acreditamos que cada direito previdenciário representa mais do que um
-          benefício: representa segurança, dignidade e tranquilidade para o
-          futuro.
+          acreditamos que cada direito representa mais do que um benefício:
+          representa segurança, dignidade e tranquilidade para o futuro.
           <br /> <br />
           Aqui, cada cliente é ouvido com atenção, orientado com clareza e
           acompanhado de perto. Atuamos com empatia, responsabilidade e
