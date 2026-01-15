@@ -71,6 +71,7 @@ function HeroTemplateNovo({
 
   return (
     <SectionArea
+      data-theme={colorMode}
       id="home"
       paddingTopAndBottom={false}
       className={`${backgroundMode}`}
@@ -102,49 +103,9 @@ function HeroTemplateNovo({
                 {content.texts.hero.miniTag}
               </div>
               <h1
-                className={`text-start desktop1:text-start text-4xl md:text-5xl lg:text-7xl font-medium leading-[1.1] tracking-tight ${text}`}
+                className={` desktop1:text-start text-[31px] phone2:text-4xl md:text-5xl lg:text-7xl font-medium leading-[1.1] ${text} `}
               >
-                {content.texts.hero.FirstPartTitle}
-
-                <span className="inline-flex items-baseline tablet1:ml-2 desktop1:ml-0">
-                  <span
-                    className={`${textDestaque} relative italic inline-block`}
-                  >
-                    {content.texts.hero.DestaquePartTitle}
-
-                    {colorMode === 'dark' ? (
-                      <svg
-                        className="absolute -bottom-1 left-0 w-full h-3"
-                        viewBox="0 0 100 10"
-                        preserveAspectRatio="none"
-                      >
-                        <path
-                          d="M0 5 Q 50 10 100 5"
-                          stroke="#292929"
-                          strokeWidth="2"
-                          fill="none"
-                        />
-                      </svg>
-                    ) : (
-                      <svg
-                        className="absolute -bottom-1 left-0 w-full h-3"
-                        viewBox="0 0 100 10"
-                        preserveAspectRatio="none"
-                      >
-                        <path
-                          d="M0 5 Q 50 10 100 5"
-                          stroke="#AFAFAF"
-                          strokeWidth="2"
-                          fill="none"
-                        />
-                      </svg>
-                    )}
-                  </span>
-
-                  <span className="ml-1">
-                    {content.texts.hero.SecondPartTitle}
-                  </span>
-                </span>
+                {content.texts.hero.title}
               </h1>
 
               <p

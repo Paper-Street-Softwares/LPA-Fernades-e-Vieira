@@ -149,11 +149,11 @@ function FeaturesNovaTemplate({ colorMode }) {
                   >
                     {content.texts.features.miniTag}
                   </span>
-                  <h2
+                  <h1
                     className={` text-3xl md:text-4xl font-mainFont font-medium mb-4 ${text} `}
                   >
                     {content.texts.features.title}
-                  </h2>
+                  </h1>
 
                   <p className={`font-secondFont font-light ${textOpacity}`}>
                     {content.texts.features.subtitle}

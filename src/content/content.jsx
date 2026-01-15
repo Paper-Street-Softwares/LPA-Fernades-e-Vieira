@@ -109,13 +109,28 @@ const content = {
     },
     hero: {
       miniTag: 'ESCRITÓRIO DE ADVOCACIA EM MINAS GERAIS',
-      FirstPartTitle: 'Especialistas em Direito',
-      DestaquePartTitle: (
-        <p>
-          <span className="italic relative inline-block">Previdenciário</span>
-        </p>
+      title: (
+        <h1>
+          Especialistas <br className="hidden desktop1:flex" /> em Direito {''}
+          <span className="destaque relative italic font-light">
+            Previdenciário
+            <span>
+              <svg
+                className="absolute -bottom-1 left-0 w-full h-3 "
+                viewBox="0 0 100 10"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M0 5 Q 50 10 100 5"
+                  stroke="#AFAFAF"
+                  strokeWidth="2"
+                  fill="none"
+                />
+              </svg>
+            </span>
+          </span>
+        </h1>
       ),
-      SecondPartTitle: '',
       subtitle: (
         <p>
           Atuação técnica e responsável na defesa dos seus direitos, com
