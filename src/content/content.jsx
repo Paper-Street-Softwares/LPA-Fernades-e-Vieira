@@ -26,7 +26,7 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'Jéssica Fernandes Advocacia',
+  name: 'Fernandes & Vieira Advocacia',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
   domain: 'jessicafernandesadvogada.com.br', // Sem "www"
@@ -108,14 +108,29 @@ const content = {
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'ESCRITÓRIO DE ADVOCACIA PREVIDENCIÁRIA',
-      FirstPartTitle: 'Especialistas em Direito',
-      DestaquePartTitle: (
-        <p>
-          <span className="italic relative inline-block">Previdenciário</span>
-        </p>
+      miniTag: 'ESCRITÓRIO DE ADVOCACIA EM MINAS GERAIS',
+      title: (
+        <h1>
+          Especialistas <br className="hidden desktop1:flex" /> em Direito {''}
+          <span className="destaque relative italic font-light">
+            Previdenciário
+            <span>
+              <svg
+                className="absolute -bottom-1 left-0 w-full h-3 "
+                viewBox="0 0 100 10"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M0 5 Q 50 10 100 5"
+                  stroke="#AFAFAF"
+                  strokeWidth="2"
+                  fill="none"
+                />
+              </svg>
+            </span>
+          </span>
+        </h1>
       ),
-      SecondPartTitle: '',
       subtitle: (
         <p>
           Atuação técnica e responsável na defesa dos seus direitos, com
@@ -158,8 +173,8 @@ const content = {
       miniTag: 'Áreas de Atuação',
       title: (
         <h1>
-          Atuação completa em Direito
-          <span className="destaque italic font-light"> Previdenciário</span>
+          Atuação completa em Direito da
+          <span className="destaque italic font-light"> Seguridade Social</span>
         </h1>
       ),
       subtitle:
@@ -310,9 +325,8 @@ const content = {
           e luta que não podem ser ignoradas.
           <br /> <br />
           Somos as advogadas Ana Carolina Vieira e Jéssica Fernandes e
-          acreditamos que cada direito previdenciário representa mais do que um
-          benefício: representa segurança, dignidade e tranquilidade para o
-          futuro.
+          acreditamos que cada direito representa mais do que um benefício:
+          representa segurança, dignidade e tranquilidade para o futuro.
           <br /> <br />
           Aqui, cada cliente é ouvido com atenção, orientado com clareza e
           acompanhado de perto. Atuamos com empatia, responsabilidade e
@@ -392,8 +406,8 @@ const content = {
       title: (
         <h1>
           Como
-          <span className="destaque italic font-light"> cuidamos</span> do seu
-          direito previdenciário?
+          <span className="destaque italic font-light"> conduzimos</span> seu
+          atendimento?
         </h1>
       ),
       subtitle: '',
@@ -402,27 +416,27 @@ const content = {
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'Análise inicial da negativa do INSS',
+          cardTitle: 'Análise inicial do caso',
           cardDescription:
-            'Avaliação da situação previdenciária do segurado, do benefício requerido e dos fundamentos utilizados pelo INSS para o indeferimento.',
+            'Avaliação da situação previdenciária do segurado, do benefício pretendido e do histórico apresentado, com identificação das possibilidades e riscos envolvidos.',
         },
         card2: {
           stepNumber: 2,
           cardTitle: 'Análise de documentos e contribuições',
           cardDescription:
-            'Exame técnico do CNIS, laudos médicos, vínculos trabalhistas, períodos de carência e demais documentos relevantes para a verificação do direito.',
+            'Exame técnico do CNIS, laudos médicos, vínculos trabalhistas, períodos de contribuição, carência e demais documentos necessários à correta apuração do direito previdenciário.',
         },
         card3: {
           stepNumber: 3,
           cardTitle: 'Definição da estratégia previdenciária',
           cardDescription:
-            'Estudo das alternativas legais cabíveis, com definição da via administrativa ou judicial mais adequada ao caso concreto.',
+            'Estudo das alternativas legais aplicáveis ao caso, com definição da melhor estratégia, seja na esfera administrativa ou judicial.',
         },
         card4: {
           stepNumber: 4,
           cardTitle: 'Atuação administrativa ou judicial',
           cardDescription:
-            'Atuação junto ao INSS ou perante o Poder Judiciário, conforme a estratégia definida, para questionamento da negativa do benefício.',
+            'Atuação junto ao INSS ou perante o Poder Judiciário, conforme a estratégia adotada, buscando a efetivação do direito previdenciário do segurado.',
         },
       },
     },
@@ -441,25 +455,26 @@ const content = {
       subtitle: 'Confira as perguntas abaixo para esclarecer suas dúvidas. ',
       questions: {
         question1: {
-          question: 'O que significa ter um benefício do INSS negado?',
+          question: 'O que envolve uma análise de benefício do INSS?',
           answer:
-            'Significa que o INSS entendeu que, naquele momento, os requisitos legais para a concessão do benefício não foram comprovados, como tempo de contribuição, carência, qualidade de segurado ou documentação adequada.',
+            'Envolve a verificação do cumprimento dos requisitos legais para o benefício pretendido, como tempo de contribuição, carência, qualidade de segurado e a regularidade da documentação apresentada, conforme a legislação previdenciária vigente.',
         },
         question2: {
-          question: 'É possível reverter a negativa do INSS?',
+          question: 'É possível contestar uma decisão do INSS?',
           answer:
-            'Em alguns casos, sim. A reversão pode ocorrer por meio de recurso administrativo ou ação judicial, após a análise técnica da decisão e dos documentos apresentados, conforme a legislação previdenciária aplicável.',
+            'Em muitos casos, sim. A decisão pode ser revista por meio de recurso administrativo ou ação judicial, após análise técnica do caso concreto e dos documentos disponíveis, observando-se os procedimentos legais aplicáveis.',
         },
         question3: {
           question:
-            'Quais são os motivos mais comuns para o INSS negar um benefício?',
+            'Quais são os problemas mais comuns em processos previdenciários?',
           answer:
-            'Entre os motivos mais frequentes estão a falta de documentação, divergências no CNIS, ausência de carência mínima, perda da qualidade de segurado ou laudos médicos considerados insuficientes.',
+            'São comuns situações como documentação incompleta, inconsistências no CNIS, dúvidas quanto ao tempo de contribuição, carência exigida, qualidade de segurado ou avaliação médica previdenciária.',
         },
         question4: {
-          question: 'Existe prazo para questionar a negativa do INSS?',
+          question:
+            'Existem prazos para apresentar pedidos ou questionamentos ao INSS?',
           answer:
-            'Sim. O prazo para apresentação de recurso administrativo, em regra, é de 30 dias a partir da ciência da decisão. Em casos judiciais, os prazos variam conforme o tipo de benefício e a situação concreta.',
+            'Sim. Os prazos variam conforme o tipo de procedimento adotado. Recursos administrativos, por exemplo, possuem prazos específicos contados a partir da ciência da decisão, enquanto medidas judiciais dependem da natureza do benefício e do caso analisado.',
         },
       },
       paragraph: 'Clique aqui caso tenha mais dúvidas',
