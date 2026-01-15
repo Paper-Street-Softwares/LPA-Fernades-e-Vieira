@@ -96,7 +96,7 @@ function TeamSectionNew({ ButtonModal, colorMode }) {
                 transition={{ duration: 0.8, ease: 'easeOut' }}
                 className="space-y-8"
               >
-                <div className="max-w-[1200px]">
+                <div className="max-w-[450px]">
                   <h1
                     className={`text-3xl md:text-4xl font-mainFont font-medium mb-4 flex flex-wrap gap-2 ${text}`}
                   >
@@ -108,6 +108,12 @@ function TeamSectionNew({ ButtonModal, colorMode }) {
                     Sou Jéssica Fernandes, advogada previdenciarista, e escolhi
                     essa área porque acredito que por trás de cada benefício
                     existe uma vida inteira de trabalho, esforço e esperança.
+                    <br />
+                    <br />
+                    Minha advocacia é feita com sensibilidade, responsabilidade
+                    e compromisso, sempre respeitando a história de quem confia
+                    em mim. Não trato processos como números, mas como histórias
+                    que merecem atenção, cuidado e justiça.
                   </p>
                 </div>
               </motion.div>
@@ -119,7 +125,7 @@ function TeamSectionNew({ ButtonModal, colorMode }) {
                 transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
                 className="relative w-full desktop1:max-w-[400px] mt-10 tablet1:mt-24 desktop1:mt-10 m-auto overflow-visible mb-10"
               >
-                <div className="relative rounded-3xl shadow-2xl ring-1 ring-black/5">
+                <div className="relative rounded-3xl shadow-2xl ring-1 max-w-[386px] mx-auto ring-black/5">
                   {/* CLIP DA IMAGEM */}
                   <div
                     className={`relative rounded-3xl overflow-hidden  ${image}`}
@@ -127,7 +133,7 @@ function TeamSectionNew({ ButtonModal, colorMode }) {
                     <img
                       src={content.texts.team.imgs.img1}
                       alt={content.texts.features.alt}
-                      className="w-full h-full object-cover scale-105 hover:scale-100 rounded-2xl transition-transform duration-700 "
+                      className="w-full max-h-96 object-cover scale-105 hover:scale-100 rounded-2xl transition-transform duration-700 "
                       width={798}
                       height={798}
                     />
@@ -143,7 +149,7 @@ function TeamSectionNew({ ButtonModal, colorMode }) {
                 transition={{ duration: 0.8, ease: 'easeOut' }}
                 className="space-y-8"
               >
-                <div className="max-w-[1200px]">
+                <div className="max-w-[450px]">
                   <h1
                     className={`text-3xl md:text-4xl font-mainFont font-medium mb-4 flex flex-wrap gap-2 ${text}`}
                   >
@@ -157,6 +163,11 @@ function TeamSectionNew({ ButtonModal, colorMode }) {
                     Entendo que o momento de buscar um benefício quase sempre
                     vem acompanhado de incertezas, mudanças e preocupações que
                     vão muito além do processo.
+                    <br />
+                    <br />
+                    Acredito que informação bem explicada traz segurança, e
+                    segurança faz toda a diferença em decisões que impactam
+                    diretamente a vida das pessoas.
                   </p>
                 </div>
               </motion.div>
@@ -168,15 +179,15 @@ function TeamSectionNew({ ButtonModal, colorMode }) {
                 transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
                 className="relative w-full desktop1:max-w-[400px] mt-10 tablet1:mt-24 desktop1:mt-10 m-auto overflow-visible mb-10"
               >
-                <div className="relative rounded-3xl shadow-2xl ring-1 ring-black/5">
+                <div className="relative rounded-3xl shadow-2xl ring-1 max-w-[386px] mx-auto ring-black/5">
                   {/* CLIP DA IMAGEM */}
                   <div
-                    className={`relative rounded-3xl overflow-hidden  ${image}`}
+                    className={`relative rounded-3xl overflow-hidden ${image}`}
                   >
                     <img
                       src={content.texts.team.imgs.img2}
                       alt={content.texts.team.imgs.alt}
-                      className="w-full scale-105 hover:scale-100 transition-transform duration-700 rounded-[1rem]"
+                      className="w-full max-h-96 object-cover scale-105 hover:scale-100 rounded-2xl transition-transform duration-700 "
                       width={726}
                       height={726}
                     />
