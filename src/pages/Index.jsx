@@ -62,8 +62,8 @@ export default function Index() {
               phoneSecond={false}
               expediente={true}
               adress={false}
-              email={true}
-              emailSecond={false}
+              email={false}
+              emailSecond={true}
             />
             <WhatsappAnimated colorMode={colorMode} />
           </Suspense>
