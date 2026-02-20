@@ -1,12 +1,12 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import content from '../../content/content'
-import SectionArea from '../sectionElements/SectionArea'
-import SectionWrapper from '../sectionElements/SectionWrapper'
-import ButtonReflexo from '../interactives/ButtonReflexo'
-import { Phone } from 'lucide-react'
+import React from "react";
+import { motion } from "framer-motion";
+import content from "../../content/content";
+import SectionArea from "../sectionElements/SectionArea";
+import SectionWrapper from "../sectionElements/SectionWrapper";
+import ButtonReflexo from "../interactives/ButtonReflexo";
+import { Phone } from "lucide-react";
 
-const features = Object.values(content.texts.features.cards)
+const features = Object.values(content.texts.features.cards);
 
 function FeaturesNovaTemplate({ colorMode }) {
   // Definindo classes dinamicamente conforme o colorMode
@@ -20,48 +20,48 @@ function FeaturesNovaTemplate({ colorMode }) {
     bgObservation,
     textDestaque,
     textObservation,
-    hoverTextCard
+    hoverTextCard;
 
   switch (colorMode) {
-    case 'light':
-      backgroundMode = 'bg-white'
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      textDestaque = 'text-primaryDark'
-      cardBg = 'bg-quartenary'
-      iconBg = 'bg-white text-primaryDark'
-      image = ' border-[8px] border-white'
-      hoverCardBg = 'hover:bg-primaryDark hover:text-white'
-      hoverTextCard = ' group-hover:text-white'
-      bgObservation = 'bg-primaryDark'
-      textObservation = 'text-white'
-      break
-    case 'dark':
-      backgroundMode = 'bg-darkOpacity'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      textDestaque = 'text-primaryLight'
-      cardBg = 'bg-dark'
-      iconBg = 'bg-darkOpacity text-primaryLight'
-      image = ' border-[8px] border-borderImage'
-      hoverCardBg = 'hover:bg-primaryLight hover:text-black'
-      hoverTextCard = ' group-hover:text-black'
-      bgObservation = 'bg-primaryLight'
-      textObservation = 'text-black'
+    case "light":
+      backgroundMode = "bg-white";
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      textDestaque = "text-primaryDark";
+      cardBg = "bg-quartenary";
+      iconBg = "bg-white text-primaryDark";
+      image = " border-[8px] border-white";
+      hoverCardBg = "hover:bg-primaryDark hover:text-white";
+      hoverTextCard = " group-hover:text-white";
+      bgObservation = "bg-primaryDark";
+      textObservation = "text-white";
+      break;
+    case "dark":
+      backgroundMode = "bg-darkOpacity";
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      textDestaque = "text-primaryLight";
+      cardBg = "bg-dark";
+      iconBg = "bg-darkOpacity text-primaryLight";
+      image = " border-[8px] border-borderImage";
+      hoverCardBg = "hover:bg-primaryLight hover:text-black";
+      hoverTextCard = " group-hover:text-black";
+      bgObservation = "bg-primaryLight";
+      textObservation = "text-black";
 
-      break
+      break;
     default:
-      backgroundMode = 'bg-secondary/60'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      textDestaque = 'text-primaryDark'
-      cardBg = 'bg-quartenary'
-      iconBg = 'bg-white text-primaryDark'
-      image = ' border-[8px] border-white'
-      hoverCardBg = 'hover:bg-primaryDark hover:text-white'
-      hoverTextCard = ' group-hover:text-white'
-      bgObservation = 'bg-primaryDark'
-      textObservation = 'text-white'
+      backgroundMode = "bg-secondary/60";
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      textDestaque = "text-primaryDark";
+      cardBg = "bg-quartenary";
+      iconBg = "bg-white text-primaryDark";
+      image = " border-[8px] border-white";
+      hoverCardBg = "hover:bg-primaryDark hover:text-white";
+      hoverTextCard = " group-hover:text-white";
+      bgObservation = "bg-primaryDark";
+      textObservation = "text-white";
   }
 
   return (
@@ -76,11 +76,11 @@ function FeaturesNovaTemplate({ colorMode }) {
             <div className="flex flex-col-reverse desktop1:flex-row gap-16 items-center">
               {/* Imagem com destaque */}
               <div>
-                {' '}
+                {" "}
                 <motion.div
                   initial={{ opacity: 0, x: -50 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.8, ease: 'easeOut' }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
                   className="relative order-2 lg:order-1 w-full m-auto"
                 >
                   <div
@@ -140,7 +140,7 @@ function FeaturesNovaTemplate({ colorMode }) {
               <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
                 className="order-1 lg:order-2 space-y-8 w-full desktop1:w-full"
               >
                 <div>
@@ -190,7 +190,7 @@ function FeaturesNovaTemplate({ colorMode }) {
         </section>
       </SectionWrapper>
     </SectionArea>
-  )
+  );
 }
 
-export default FeaturesNovaTemplate
+export default FeaturesNovaTemplate;

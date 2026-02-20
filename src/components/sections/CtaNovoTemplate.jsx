@@ -1,35 +1,35 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import SectionArea from '../sectionElements/SectionArea'
-import SectionWrapper from '../sectionElements/SectionWrapper'
-import ButtonReflexo from '../interactives/ButtonReflexo'
-import content from '../../content/content'
-import { whatsAppThemes } from '../../context/UseContextArchive'
-import { Phone } from 'lucide-react'
-import WhatsappForm from '../interactives/WhatsappForm'
-import FormAndAdress from '../interactives/Forms/FormAndAdress'
+import React from "react";
+import { motion } from "framer-motion";
+import SectionArea from "../sectionElements/SectionArea";
+import SectionWrapper from "../sectionElements/SectionWrapper";
+import ButtonReflexo from "../interactives/ButtonReflexo";
+import content from "../../content/content";
+import { whatsAppThemes } from "../../context/UseContextArchive";
+import { Phone } from "lucide-react";
+import WhatsappForm from "../interactives/WhatsappForm";
+import FormAndAdress from "../interactives/Forms/FormAndAdress";
 
 function CtaNovoTemplate({ colorMode }) {
   // Classes dinâmicas conforme colorMode
-  let text, textOpacity, backgroundMode, miniTagCtaDark
+  let text, textOpacity, backgroundMode, miniTagCtaDark;
 
   switch (colorMode) {
-    case 'light':
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      backgroundMode = 'bg-white'
-      miniTagCtaDark = 'text-primaryDark'
-      break
-    case 'dark':
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corTitulosBranca/60'
-      backgroundMode = 'bg-darkOpacity'
-      miniTagCtaDark = 'text-primaryLight'
-      break
+    case "light":
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      backgroundMode = "bg-white";
+      miniTagCtaDark = "text-primaryDark";
+      break;
+    case "dark":
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corTitulosBranca/60";
+      backgroundMode = "bg-darkOpacity";
+      miniTagCtaDark = "text-primaryLight";
+      break;
     default:
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      backgroundMode = 'bg-primaryDark'
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      backgroundMode = "bg-primaryDark";
   }
 
   return (
@@ -40,7 +40,7 @@ function CtaNovoTemplate({ colorMode }) {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
             className="container mx-auto"
           >
             <span
@@ -64,6 +64,7 @@ function CtaNovoTemplate({ colorMode }) {
             </div> */}
             <div className="flex flex-col gap-4 pt-4 w-fit justify-center items-center mx-auto">
               <ButtonReflexo
+                Onclick={() => gtag_report_conversion()}
                 icon={
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +94,7 @@ function CtaNovoTemplate({ colorMode }) {
         </section>
       </SectionWrapper>
     </SectionArea>
-  )
+  );
 }
 
-export default CtaNovoTemplate
+export default CtaNovoTemplate;

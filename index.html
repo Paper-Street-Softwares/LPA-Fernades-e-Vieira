@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -152,6 +152,38 @@ Fernandes & Vieira advogada previdenciária.
       name="twitter:url"
       content="https://www.fernandesevieiraadvocacia.com.br/"
     />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-17614346992"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-17614346992");
+    </script>
+
+    <!-- Event snippet for Adv. Prev - Clique Botão CTA conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion() {
+        // var callback = function () {
+        //   if (typeof url != "undefined") {
+        //     window.location = url;
+        //   }
+        // };
+        gtag("event", "conversion", {
+          send_to: "AW-17614346992/9DUgCOuekvwbEPC1ls9B",
+          // event_callback: callback,
+        });
+        return false;
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
