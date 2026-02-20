@@ -29,7 +29,7 @@ export const infos = {
   name: "Fernandes & Vieira Advocacia",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "fernandesvieirajuridico@gmail.com", // Email desejado pelo cliente
-  domain: "jessicafernandesadvogada.com.br", // Sem "www"
+  domain: "jessicafernandesAdvogada.com.br", // Sem "www"
   phone: {
     ddd: "31",
     firstPart: "99638", // Apenas os 5 primeiros números (incluindo o 9)
@@ -328,7 +328,7 @@ const content = {
           Previdenciário, criado para defender histórias de trabalho, dedicação
           e luta que não podem ser ignoradas.
           <br /> <br />
-          Somos as advogadas Ana Carolina Vieira e Jéssica Fernandes e
+          Somos as Advogadas Ana Carolina Vieira e Jéssica Fernandes e
           acreditamos que cada direito representa mais do que um benefício:
           representa segurança, dignidade e tranquilidade para o futuro.
           <br /> <br />
@@ -378,7 +378,7 @@ const content = {
       },
     },
     team: {
-      miniTag: " ADVOGADAS",
+      miniTag: " AdvogadaS",
       title: (
         <h1>
           Cuidado <span className="italic text-primaryDark">além</span> do
