@@ -64,7 +64,7 @@ export const infos = {
   ),
   expediente: (
     <div>
-      <p>Segunda a setxa-feira</p>
+      <p>Segunda a Sexta-feira</p>
       <p>8h às 18h</p>
     </div>
   ),
@@ -133,8 +133,8 @@ const content = {
       ),
       subtitle: (
         <p>
-          Atuação técnica e responsável na defesa dos seus benefícios, auxílios
-          e aposentadorias, com total compromisso com cada caso.
+          Atuação técnica em situações envolvendo INSS, defesa de benefícios,
+          auxílios e aposentadorias, com total compromisso com cada caso.
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -146,7 +146,7 @@ const content = {
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: "Atendimento online em todo território nacional.",
+        text: "Atendimento online e presencial.",
         textTwo: "",
       },
       secondaryCta: "Contato",
