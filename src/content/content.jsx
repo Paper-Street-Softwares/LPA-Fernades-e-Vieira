@@ -133,8 +133,12 @@ const content = {
       ),
       subtitle: (
         <p>
-          Atuação técnica em situações envolvendo INSS, defesa de benefícios,
-          auxílios e aposentadorias, com total compromisso com cada caso.
+          Atuação técnica em situações envolvendo o
+          <span className="font-bold">
+            {" "}
+            INSS, defesa de benefícios, auxílios e aposentadorias
+          </span>
+          , com total compromisso com cada caso.
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -146,7 +150,7 @@ const content = {
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: "Atendimento online e presencial.",
+        text: "Atendimento online rápido e simplificado.",
         textTwo: "",
       },
       secondaryCta: "Contato",
