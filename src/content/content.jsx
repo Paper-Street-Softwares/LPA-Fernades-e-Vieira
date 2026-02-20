@@ -108,7 +108,7 @@ const content = {
       ctaButtonTextResponsive: "Contato",
     },
     hero: {
-      miniTag: "ESCRITÓRIO DE ADVOCACIA",
+      miniTag: "ESCRITÓRIO DE ADVOCACIA EM BELO HORIZONTE - MG",
       title: (
         <h1>
           Especialistas <br className="hidden desktop1:flex" /> em Direito {""}
