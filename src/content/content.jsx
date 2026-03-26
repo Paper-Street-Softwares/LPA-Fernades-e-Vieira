@@ -378,7 +378,7 @@ const content = {
       },
     },
     team: {
-      miniTag: " AdvogadaS",
+      miniTag: "ADVOGADA",
       title: (
         <h1>
           Cuidado <span className="italic text-primaryDark">além</span> do

@@ -150,67 +150,6 @@ function TeamSectionNew({ ButtonModal, colorMode }) {
                 </div>
               </motion.div>
             </div>
-
-            <div className="flex flex-col-reverse desktop1:flex-row desktop1:gap-16 items-center">
-              {/* Conteúdo textual */}
-              <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
-                className="space-y-8"
-              >
-                <div className="max-w-[388px]">
-                  {/* <span
-                    className={`font-secondFont text-paragraph2 uppercase font-bold ${textDestaque}`}
-                  >
-
-                  </span> */}
-                  <h1
-                    className={`text-3xl md:text-4xl font-mainFont font-medium flex flex-col gap-0 ${text}`}
-                  >
-                    Dra. Carolina Vieira
-                  </h1>
-
-                  <p
-                    className={`font-secondFont font-light text-sm leading-relaxed mt-4 ${textOpacity}`}
-                  >
-                    Sou Carolina Vieira, Advogada previdenciarista, e minha
-                    atuação é guiada por um olhar humano sobre o Direito.
-                    Entendo que o momento de buscar um benefício quase sempre
-                    vem acompanhado de incertezas, mudanças e preocupações que
-                    vão muito além do processo.
-                    <br />
-                    <br />
-                    Acredito que informação bem explicada traz segurança, e
-                    segurança faz toda a diferença em decisões que impactam
-                    diretamente a vida das pessoas.
-                  </p>
-                </div>
-              </motion.div>
-
-              {/* Imagem com destaque */}
-              <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-                className="relative w-full desktop1:max-w-[400px] m-auto overflow-visible mb-6 desktop1:mb-0"
-              >
-                <div className="relative rounded-3xl shadow-2xl ring-1 max-w-[386px] mx-auto ring-black/5">
-                  {/* CLIP DA IMAGEM */}
-                  <div
-                    className={`relative rounded-3xl overflow-hidden ${image}`}
-                  >
-                    <img
-                      src={content.texts.team.imgs.img2}
-                      alt={content.texts.team.imgs.alt}
-                      className="w-full max-h-96 object-cover scale-105 hover:scale-100 rounded-2xl transition-transform duration-700 "
-                      width={726}
-                      height={726}
-                    />
-                  </div>
-                </div>
-              </motion.div>
-            </div>
           </div>
 
           {/* Modal */}
