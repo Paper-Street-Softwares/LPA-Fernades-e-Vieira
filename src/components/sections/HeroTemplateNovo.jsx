@@ -171,7 +171,7 @@ function HeroTemplateNovo({
                 <img
                   src={content.texts.hero.heroDefaultImage}
                   alt={content.texts.hero.alt}
-                  className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-700"
+                  className="w-full h-full object-cover object-top scale-105 hover:scale-100 transition-transform duration-700"
                   width={790}
                   height={992}
                   fetchPriority="high"
